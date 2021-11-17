@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      height: 100vh;
+      width:1440px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #F0F0F0;
+    }
+    .container{
+      box-shadow: 5px 5px 5px #E1E2E2 ;
+      width: 42%;
+      height: 60%;
+      grid-gap: 0px;
+      display: grid;
+      font-family: Karla;
+      border-radius: 20px;
+
+    }
+    .grid-1{
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start:1 ;
+      grid-column-end: 3;
+      background-color: #FFFFFF;
+      border-radius: 7px 7px 0 0;
+      padding: 40px;
+    }
+    .grid-2{
+      grid-row-start:3 ;
+      grid-row-end:6 ;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      background-color: #00B6B2;
+      border-radius: 0 0 0 7px;
+      padding: 40px;
+    }
+    .grid-3{
+      grid-row-start:3;
+      grid-row-end: 6;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      background-color: #00C1BE;
+      border-radius: 0 0 7px 0;
+      padding: 40px;
+      
+    }
+    .join{
+      
+      font-size: 20px;
+      color: #00B6B0;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+    .free{
+      color: #C3E51B;
+      padding-bottom: 10px;
+      
+    }
+    .gain{
+      color:#C4C6CF;
+      font-size: 14px;
+    }
+    .month{
+      color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+    .per{
+      color:rgba(256, 256, 256, 0.6);
+      font-size:12px;
+      padding-bottom: 10px;
+    }
+    b{
+      font-size: 20px;
+      color:#FFFFFF;
+    }
+    .full{
+      color:#FFFFFF;
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+    .sign{
+      background-color: #C3E51B;
+      padding: 13px;
+      border-radius: 6px;
+      color:rgba(256, 256, 256, 0.8);
+      text-align: center;
+      box-shadow: 5px 5px 5px #009F90;
+    }
+    .why{
+      color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+    .text{
+      font-size: 14px;
+      color: rgba(256, 256, 256, 0.5);
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="grid-1">
+      <div class="join">Join our community</div>    
+      <div class="free">30-day, hassle-free money back guarantee</div>    
+      <div class="gain">
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="month">Monthly Subscription</div>  
+      <div class="per"><b>&dollar;29 </b>per month</div>  
+      <div class="full">Full access for less than &dollar;1 a day</div>  
+      <div class="sign">Sign Up</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="why">Why Us</div> 
+      <div class="text">
+        <div>Tutorials by industry experts</div>
+        <div>Peer &amp; expert code review</div>
+        <div>Coding exercises</div>
+        <div>Access to our GitHub repos</div>
+        <div>Community forum</div>
+        <div>Flashcard decks</div>
+        <div>New videos every week</div>
+      </div>
+    </div>
+  </div>
+    
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+</html>
